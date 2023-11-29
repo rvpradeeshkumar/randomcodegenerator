@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --white_color: #ffffff;
+    --color_linear_gradient: linear-gradient(90deg, #EC7063, #F06292);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_container {
+    margin: auto;
+    width: 50%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color_linear_gradient);
+}
+
+.main_container .container {
+    position: relative;
+    padding: 20px 10px;
+    width: 600px;
+    border-radius: 5px;
+    background: var(--white_color);
+    box-shadow: 0.1px 2px 8px 4px rgba(0, 0, 0, 0.08);
+}
+
+.container .quote_icon {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--white_color);
+    border: 2px solid rgba(0, 0, 0, 0.02);
+}
+
+.container .quote_icon svg {
+    fill: #F06292;
+}
+
+.container .content p {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.container .content #quote_tv {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+.container .content #author_tv {
+    margin-top: 8px;
+}
+
+.control_btns {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.control_btns div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white_color);
+    cursor: pointer;
+    background: var(--color_linear_gradient);
+}
+
+.control_btns div svg {
+    fill: var(--white_color);
+}
+
+.control_btns .next_quote_btn {
+    margin-left: 10px;
+}
+
+body {
+    background-color: papayawhip;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 10px solid cornsilk;
+    --color_linear_gradient: linear-gradient(90deg, #EC7063, #F06292);
+    background: var(--color_linear_gradient);
+}
+
+img {
+    max-width: 75%;
+    min-height: 55%;
+    border-radius: 95px;
+}
+
+table {
+    background-color: cornsilk;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 40px;
+    width: 45%;
+}
+
+td {
+    border: 4px solid skyblue;
+    padding: 15px;
+    border-spacing: 40px;
+    border-radius: 10%;
+}
+
+.left {
+    flex-basis: 70%;
+    order: 2;
+}
+
+.text {
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    padding-left: 0px 0px 5px 0px;
+}
+
+#content {
+    font-family: "Sofia", sans-serif;
+    font-size: 15px;
+    padding-left: 80px;
+}
+
+#latest {
+
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+    width: 30%;
+    border-radius: 45%;
+    height: auto;
+    font-size: 30px;
+    background-color: antiquewhite;
+}
+
+#foo {
+    color: #EC7063;
+    padding: 0px 0px 6px 0px;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 650px) {
+    .main_container .container {
+        width: 95%;
+    }
+}
